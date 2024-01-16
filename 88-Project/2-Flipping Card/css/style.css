@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px, -100px);
+    background: linear-gradient(90deg, #9c27b0, #f3f4);
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(150px, 100px);
+    background: linear-gradient(90deg, #9c27b0, #f3f4);
+}
+
+.container {
+    position: relative;
+    height: 275px;
+    width: 375px;
+    z-index: 100;
+}
+
+.container .card {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    backdrop-filter: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.font-face header,
+.font-face .logo {
+    display: flex;
+    align-items: center;
+}
+
+.font-face header {
+    justify-content: space-between;
+}
+
+.font-face .logo img {
+    width: 48px;
+    margin-right: 10px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.font-face .chip {
+    width: 45px;
+}
